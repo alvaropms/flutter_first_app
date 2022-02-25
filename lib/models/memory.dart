@@ -49,7 +49,7 @@ class Memory {
     _value = currentValue + digit;
     _wipeValue = false;
 
-    _buffer[_bufferIndex] = double.tryParse(digit) ?? 0;
+    _buffer[_bufferIndex] = double.tryParse(_value) ?? 0;
   }
 
   _allClear() {
